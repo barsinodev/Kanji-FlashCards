@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kanji-FlashCards — Learn JLPT Kanji (N5→N1)</title>
+<meta name="description" content="Study JLPT kanji with clean flashcards. Start free (N5–N4). Create custom lists and practice in random order. One-time in-app purchase unlocks N3–N1.">
+<link rel="icon" href="./assets/120x120.png">
+<meta property="og:title" content="Kanji-FlashCards — Learn JLPT Kanji">
+<meta property="og:description" content="Clean flashcards for JLPT N5→N1. Random order, custom lists, one-time unlock for advanced levels.">
+<meta property="og:image" content="./assets/og-image.png">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1E73E8">
+<style>
+:root{
+  --bg:#ffffff; --text:#0a0a0a; --muted:#6b7280; --card:#f5f6f8; --line:#e5e7eb;
+  --brand:#1E73E8; --brand-ink:#0c57b8; --ok:#10b981; --ink:#111827;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0b0d10; --text:#f3f5f7; --muted:#b2b8c2; --card:#12161c; --line:#1f2430; --ink:#e5e7eb }
+}
+*{box-sizing:border-box}
+body{margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--text); background:var(--bg); line-height:1.6}
+.container{max-width:1080px; margin:0 auto; padding:24px}
+.header{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:8px 0}
+.brand{display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--text)}
+.brand img{width:40px; height:40px; border-radius:10px; background:#fff; object-fit:contain; box-shadow:0 1px 2px rgba(0,0,0,.05)}
+.brand b{font-size:1.15rem}
+.header nav a{color:var(--muted); text-decoration:none; margin-left:16px}
+.header nav a:hover{color:var(--text)}
+.hero{display:grid; gap:28px; grid-template-columns:1.05fr 1fr; align-items:center; padding:28px 0}
+@media (max-width:900px){ .hero{grid-template-columns:1fr} }
+.h-title{font-size: clamp(30px, 5vw, 52px); line-height:1.12; margin:0; text-align:left}
+.h-sub{color:var(--muted); font-size:1.05rem; margin:12px 0 22px}
+.cta-row{display:flex; gap:12px; flex-wrap:wrap; margin:12px 0 12px}
+.button{background:var(--brand); color:white; padding:12px 18px; border-radius:14px; text-decoration:none; font-weight:700; box-shadow:0 8px 22px rgba(30,115,232,.18)}
+.button:hover{background:var(--brand-ink)}
+.badge{display:inline-flex; align-items:center; gap:10px; border:1px solid var(--line); padding:10px 14px; border-radius:12px; text-decoration:none; color:var(--text); background:var(--card)}
+.badge small{display:block; color:var(--muted); line-height:1}
+.hero-media{border:1px solid var(--line); background:var(--card); border-radius:22px; padding:12px; box-shadow:0 10px 24px rgba(0,0,0,.06)}
+.hero-media img{width:100%; border-radius:16px; display:block}
+.section{padding:16px 0}
+.grid{display:grid; gap:16px; grid-template-columns:repeat(3,1fr)}
+@media (max-width:900px){ .grid{grid-template-columns:1fr} }
+.card{border:1px solid var(--line); background:var(--card); padding:18px; border-radius:16px}
+.card h3{margin:0 0 8px; font-size:1.1rem}
+.card p{margin:0; color:var(--muted)}
+.features{display:grid; gap:12px; grid-template-columns:repeat(2,1fr)}
+@media (max-width:900px){ .features{grid-template-columns:1fr} }
+.fitem{border:1px dashed var(--line); background:transparent; padding:14px; border-radius:14px}
+.footer{padding:28px 0 48px; color:var(--muted); border-top:1px solid var(--line); margin-top:28px}
+.footer a{color:var(--muted)}
+.langs{display:flex;gap:12px;align-items:center;margin-top:10px;flex-wrap:wrap}
+.lang-item{display:flex;align-items:center;gap:8px;padding:8px 10px;border:1px solid var(--line);background:var(--card);border-radius:10px}
+.lang-flag{width:18px;height:18px;border-radius:4px;object-fit:cover;box-shadow:0 0 0 1px rgba(0,0,0,.05)}
+.kicker{color:var(--muted); font-weight:600; letter-spacing:.02em; text-transform:uppercase; font-size:.8rem}
+</style>
+</head>
+<body>
+<header class="container header">
+  <a class="brand" href="#">
+    <img src="./assets/1024x1024.png" alt="Kanji-FlashCards logo">
+    <b>Kanji-FlashCards</b>
+  </a>
+  <nav>
+    <a href="./privacy-policy.html">Privacy</a>
+    <a href="./support.html">Support</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div>
+      <div class="kicker">JLPT N5 → N1</div>
+      <h1 class="h-title">Learn Japanese <span style="color:var(--brand)">kanji</span> with clean, smart flashcards.</h1>
+      <p class="h-sub">Start free with N5–N4. Practice in <strong>random order</strong>, build <strong>custom lists</strong>, and check <strong>onyomi/kunyomi</strong> and meaning at a glance. Unlock N3–N1 with a one-time in-app purchase. No account.</p>
+      <div class="cta-row">
+        <a class="button" href="" aria-label="Download on the App Store">Download for iPhone</a>
+        <a class="badge" href="#">
+          <div>
+            <strong>What’s new</strong>
+            <small>v1.0 — Initial release</small>
+          </div>
+        </a>
+      </div>
+
+      <div class="features">
+        <div class="fitem">• Randomize cards to avoid memorizing sequences</div>
+        <div class="fitem">• Create & practice your own lists</div>
+        <div class="fitem">• Levels aligned to JLPT (N5 → N1)</div>
+        <div class="fitem">• Neat, distraction-free design</div>
+      </div>
+
+      <div class="langs" aria-label="Supported languages" style="margin-top:14px">
+        <div class="lang-item">
+          <img class="lang-flag" src="./assets/flags/gb.svg" alt="English"
+               onerror="this.replaceWith(document.createTextNode('🇬🇧'));">
+          <span>English</span>
+        </div>
+        <div class="lang-item">
+          <img class="lang-flag" src="./assets/flags/es.svg" alt="Español"
+               onerror="this.replaceWith(document.createTextNode('🇪🇸'));">
+          <span>Español</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-media">
+      <!-- Replace the image with your exported screenshot -->
+      <img src="./assets/home-screen.png" alt="Kanji-FlashCards screenshot">
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid">
+      <div class="card">
+        <h3>Levels</h3>
+        <p>Study JLPT levels N5 through N1. Free access to N5–N4; one-time unlock for N3–N1.</p>
+      </div>
+      <div class="card">
+        <h3>Practice</h3>
+        <p>Meaning plus onyomi/kunyomi. Instant feedback with simple examples.</p>
+      </div>
+      <div class="card">
+        <h3>Lists</h3>
+        <p>Create personal lists (e.g., “Exam”, “This week”) and practice only what you need.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="container footer">
+  <div>© 2025 Kanji-FlashCards</div>
+  <div><a href="./privacy-policy.html">Privacy Policy</a> · <a href="./privacy-choices.html">User Privacy Choices</a> · <a href="./support.html">Support</a></div>
+</footer>
+</body>
+</html>
